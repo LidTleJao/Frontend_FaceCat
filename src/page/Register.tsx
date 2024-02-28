@@ -2,6 +2,7 @@ import { CardMedia, Typography, TextField, Button } from "@mui/material";
 import { Container, Box } from "@mui/system";
 import { Link, useNavigate } from "react-router-dom";
 import PersonIcon from "@mui/icons-material/Person";
+import EmailIcon from '@mui/icons-material/Email';
 import LockIcon from "@mui/icons-material/Lock";
 
 function RegisterPage() {
@@ -74,7 +75,23 @@ function RegisterPage() {
             </div>
           </div>
           <div>
-            <Box display={"flex"} flexDirection={"column"} margin={"50px"}>
+            <Box display={"flex"} flexDirection={"column"} >
+            <div>
+                <TextField
+                  // id="outlined-start-adornment"
+                  placeholder="ชื่อผู้ใช้งาน"
+                  sx={{ m: 1, width: "50ch" }}
+                  InputProps={{
+                    sx: { borderRadius: "50px", bgcolor: "white" },
+                    startAdornment: (
+                      <PersonIcon
+                        fontSize="large"
+                        sx={{ color: "black", marginRight: "20px" }}
+                      />
+                    ),
+                  }}
+                />
+              </div>
               <div>
                 <TextField
                   // id="outlined-start-adornment"
@@ -83,7 +100,7 @@ function RegisterPage() {
                   InputProps={{
                     sx: { borderRadius: "50px", bgcolor: "white" },
                     startAdornment: (
-                      <PersonIcon
+                      <EmailIcon
                         fontSize="large"
                         sx={{ color: "black", marginRight: "20px" }}
                       />
@@ -134,7 +151,7 @@ function RegisterPage() {
                     color: "black",
                     borderRadius: 50,
                     marginLeft: "140px",
-                    marginTop: "30px",
+                    marginTop: "10px",
                     fontFamily: "Mitr, sans-serif",
                   }}
                   onClick={navigateToLoginPage}
@@ -147,7 +164,7 @@ function RegisterPage() {
                   gutterBottom
                   sx={{
                     fontFamily: "Mitr, sans-serif",
-                    marginTop: "20px",
+                    marginTop: "10px",
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
