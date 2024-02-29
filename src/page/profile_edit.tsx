@@ -1,15 +1,17 @@
+import { Typography, CardMedia, TextField, Grid, Button } from "@mui/material";
 import { Box } from "@mui/system";
-import Header from "../component/Header";
 import AddPhotoAlternateOutlinedIcon from "@mui/icons-material/AddPhotoAlternateOutlined";
-import { Button, CardMedia, Grid, TextField, Typography } from "@mui/material";
+import Header from "../component/Header";
 import { useNavigate } from "react-router-dom";
+import ClearIcon from "@mui/icons-material/Clear";
+import ModeEditIcon from "@mui/icons-material/ModeEdit";
 
-function ProfilePage() {
+function ProfileEditPage() {
   const navigate = useNavigate();
 
-    function navigateToProfileEditPage() {
-        navigate("/ProfileEdit");
-    }
+  function navigateToProfilePage() {
+    navigate("/Profile");
+  }
   return (
     <>
       <Header />
@@ -70,17 +72,38 @@ function ProfilePage() {
               }}
             >
               <div style={{ flexGrow: 1, display: "flex" }}>
-                <CardMedia
-                  sx={{
-                    height: 140,
-                    width: 140,
-                    borderRadius: 20,
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                  }}
-                  image="src/img/profile.jpg"
-                />
+                <Box>
+                  <div style={{ display: "flex", justifyContent: "right" }}>
+                    <Button
+                      variant="contained"
+                      sx={{
+                        height: 40,
+                        width: 20,
+                        borderRadius: 20,
+                      }}
+                      color="primary"
+                    >
+                      <ModeEditIcon
+                        sx={{
+                          height: 20,
+                          width: 20,
+                        }}
+                      />
+                    </Button>
+                  </div>
+
+                  <CardMedia
+                    sx={{
+                      height: 140,
+                      width: 140,
+                      borderRadius: 20,
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                    }}
+                    image="src/img/profile.jpg"
+                  />
+                </Box>
               </div>
               <div
                 style={{
@@ -105,15 +128,11 @@ function ProfilePage() {
                 </div>
                 <div>
                   <TextField
-                    // placeholder="NameUser"
+                    placeholder="Prapanpong"
                     sx={{ m: 1, width: "50ch" }}
                     InputProps={{
                       sx: { borderRadius: "50px", bgcolor: "white" },
-                      startAdornment: (
-                        <>
-                          <h3>Prapanpong</h3>
-                        </>
-                      ),
+                      startAdornment: <>{/* <h3>Prapanpong</h3> */}</>,
                     }}
                   />
                 </div>
@@ -141,14 +160,12 @@ function ProfilePage() {
                 </div>
                 <div>
                   <TextField
-                    // placeholder="Gmail"
+                    placeholder="Prapanpong@gmail.com"
                     sx={{ m: 1, width: "50ch" }}
                     InputProps={{
                       sx: { borderRadius: "50px", bgcolor: "white" },
                       startAdornment: (
-                        <>
-                          <h3>Prapanpong@gmail.com</h3>
-                        </>
+                        <>{/* <h3>Prapanpong@gmail.com</h3> */}</>
                       ),
                     }}
                   />
@@ -177,15 +194,11 @@ function ProfilePage() {
                 </div>
                 <div>
                   <TextField
-                    // placeholder="Password"
+                    placeholder="1234"
                     sx={{ m: 1, width: "50ch" }}
                     InputProps={{
                       sx: { borderRadius: "50px", bgcolor: "white" },
-                      startAdornment: (
-                        <>
-                          <h3>1234</h3>
-                        </>
-                      ),
+                      startAdornment: <>{/* <h3>1234</h3> */}</>,
                     }}
                   />
                 </div>
@@ -199,11 +212,35 @@ function ProfilePage() {
               display: "flex",
               // justifyContent: "space-between",
               marginLeft: "100px",
-              marginTop: "100px",
+              marginTop: "30px",
             }}
           >
             <Grid container spacing={2}>
               <Grid item xs={2.3}>
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "end",
+                    marginBottom: "5px",
+                  }}
+                >
+                  <Button
+                    variant="contained"
+                    sx={{
+                      height: 50,
+                      width: 50,
+                      borderRadius: 20,
+                    }}
+                    color="error"
+                  >
+                    <ClearIcon
+                      sx={{
+                        height: 50,
+                        width: 50,
+                      }}
+                    />
+                  </Button>
+                </div>
                 <CardMedia
                   sx={{
                     height: 260,
@@ -218,6 +255,30 @@ function ProfilePage() {
               </Grid>
 
               <Grid item xs={2.3}>
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "end",
+                    marginBottom: "5px",
+                  }}
+                >
+                  <Button
+                    variant="contained"
+                    sx={{
+                      height: 50,
+                      width: 50,
+                      borderRadius: 20,
+                    }}
+                    color="error"
+                  >
+                    <ClearIcon
+                      sx={{
+                        height: 50,
+                        width: 50,
+                      }}
+                    />
+                  </Button>
+                </div>
                 <CardMedia
                   sx={{
                     height: 260,
@@ -231,6 +292,30 @@ function ProfilePage() {
                 />
               </Grid>
               <Grid item xs={2.3}>
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "end",
+                    marginBottom: "5px",
+                  }}
+                >
+                  <Button
+                    variant="contained"
+                    sx={{
+                      height: 50,
+                      width: 50,
+                      borderRadius: 20,
+                    }}
+                    color="error"
+                  >
+                    <ClearIcon
+                      sx={{
+                        height: 50,
+                        width: 50,
+                      }}
+                    />
+                  </Button>
+                </div>
                 <CardMedia
                   sx={{
                     height: 260,
@@ -244,6 +329,30 @@ function ProfilePage() {
                 />
               </Grid>
               <Grid item xs={2.3}>
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "end",
+                    marginBottom: "5px",
+                  }}
+                >
+                  <Button
+                    variant="contained"
+                    sx={{
+                      height: 50,
+                      width: 50,
+                      borderRadius: 20,
+                    }}
+                    color="error"
+                  >
+                    <ClearIcon
+                      sx={{
+                        height: 50,
+                        width: 50,
+                      }}
+                    />
+                  </Button>
+                </div>
                 <CardMedia
                   sx={{
                     height: 260,
@@ -267,6 +376,7 @@ function ProfilePage() {
                       display: "flex",
                       justifyContent: "center",
                       alignItems: "center",
+                      marginTop: "55px",
                     }}
                   >
                     <AddPhotoAlternateOutlinedIcon
@@ -292,7 +402,7 @@ function ProfilePage() {
           display: "flex",
           justifyContent: "end",
           flexDirection: "row",
-          marginTop:"30px"
+          marginTop: "30px",
         }}
       >
         <Button
@@ -305,13 +415,27 @@ function ProfilePage() {
             mr: 2,
             fontFamily: "Mitr, sans-serif",
           }}
-          onClick={navigateToProfileEditPage}
+          onClick={navigateToProfilePage}
         >
-          แก้ไขข้อมูล
+          บันทึก
+        </Button>
+        <Button
+          variant="contained"
+          style={{ backgroundColor: "white" }}
+          sx={{
+            width: "8pc",
+            color: "black",
+            borderRadius: 3,
+            mr: 2,
+            fontFamily: "Mitr, sans-serif",
+          }}
+          onClick={navigateToProfilePage}
+        >
+          ยกเลิก
         </Button>
       </div>
     </>
   );
 }
 
-export default ProfilePage;
+export default ProfileEditPage;
