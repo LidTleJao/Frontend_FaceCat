@@ -2,6 +2,7 @@ import { Typography, TableContainer, Table, TableBody, TableRow, TableCell, Card
 import { Container, Box } from "@mui/system";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import Header_Admin from "../../component/Header_Admin";
+import "./AdminRanking.css";
 
 function AdminRankingPage() {
   const RankingData = [
@@ -21,8 +22,8 @@ function AdminRankingPage() {
           justifyContent={"start"}
           alignItems={"center"}
           sx={{
-            width: 700,
-            height: 700,
+            width: 680,
+            height: 630,
             borderRadius: 15,
             marginTop: "70px",
             backgroundColor: "#FFA928",
@@ -49,10 +50,10 @@ function AdminRankingPage() {
               จัดอันดับ
             </Typography>
           </div>
-          <div>
+          <div >
             <TableContainer
               style={{
-                maxHeight: 520,
+                maxHeight: 450,
                 display: "flex",
                 justifyContent: "center",
               }}
@@ -63,9 +64,10 @@ function AdminRankingPage() {
                   justifyContent: "center",
                 }}
               >
-                <TableBody>
+                <TableBody >
                   {RankingData.map((data, index) => (
-                    <TableRow key={index}>
+                    
+                    <TableRow key={index} >
                       <TableCell>
                         <Box
                           display={"flex"}
