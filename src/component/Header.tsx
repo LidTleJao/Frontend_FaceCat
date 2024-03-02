@@ -14,6 +14,9 @@ function Header() {
     function navigateToVotePage() {
         navigate("/vote");
     }
+    function navigateToRankingPage() {
+      navigate("/ranking");
+  }
   return (
     <>
         <AppBar position="fixed">
@@ -112,6 +115,7 @@ function Header() {
                 mr: 2,
                 fontFamily: "Mitr, sans-serif",
               }}
+              onClick={navigateToRankingPage}
             >
               จัดอันดับ
             </Button>

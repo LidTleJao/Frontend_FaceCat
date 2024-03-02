@@ -101,6 +101,7 @@ function ProfileEditPage() {
                       justifyContent: "center",
                       alignItems: "center",
                     }}
+                    
                     image="src/img/profile.jpg"
                   />
                 </Box>

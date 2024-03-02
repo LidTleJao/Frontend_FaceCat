@@ -5,6 +5,7 @@ import RegisterPage from './page/Register';
 import VotePage from './page/Vote';
 import ProfilePage from './page/profile';
 import ProfileEditPage from './page/profile_edit';
+import RankingPage from './page/Ranking';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       { path: "/vote", element: <VotePage />},
       { path: "/Profile", element: <ProfilePage />},
       { path: "/ProfileEdit", element: <ProfileEditPage />},
+      { path: "/ranking", element: <RankingPage />},
     ]
   );
 

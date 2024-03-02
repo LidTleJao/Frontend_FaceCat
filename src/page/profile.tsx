@@ -213,6 +213,7 @@ function ProfilePage() {
                     justifyContent: "center",
                     alignItems: "center",
                   }}
+                  onClick={navigateToProfileEditPage}
                   image="src/img/cat2.jpg"
                 />
               </Grid>
