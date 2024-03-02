@@ -1,6 +1,7 @@
 import { Container, Box } from "@mui/system";
 import Header from "../component/Header";
 import { CardMedia, Typography } from "@mui/material";
+import "./Vote.css";
 
 function VotePage() {
   return (
@@ -33,8 +34,8 @@ function VotePage() {
           >
           <Box
           sx={{
-            width: 500,
-            height: 600,
+            width: 400,
+            height: 500,
             borderRadius: 10,
             backgroundColor: "#FFA928",
             marginRight: 15,
@@ -46,8 +47,8 @@ function VotePage() {
           >
             <CardMedia
                   sx={{
-                    height: 400,
-                    width: 400,
+                    height: 300,
+                    width: 300,
                     borderRadius: 50,
                     display: "flex",
                     justifyContent: "center",
@@ -63,7 +64,7 @@ function VotePage() {
                   alignItems: "center",
                   
                   color: "black",
-                  ml: 2,
+                  // ml: 2,
                   fontFamily: "Mitr, sans-serif",
                 }}
                 variant="h2"
@@ -97,8 +98,8 @@ function VotePage() {
           
           <Box
           sx={{
-            width: 500,
-            height: 600,
+            width: 400,
+            height: 500,
             borderRadius: 10,
             backgroundColor: "#FFA927",
             marginLeft: 15,
@@ -110,8 +111,8 @@ function VotePage() {
           >
             <CardMedia
                   sx={{
-                    height: 400,
-                    width: 400,
+                    height: 300,
+                    width: 300,
                     borderRadius: 50,
                     display: "flex",
                     justifyContent: "center",
@@ -127,7 +128,7 @@ function VotePage() {
                   alignItems: "center",
                   
                   color: "black",
-                  ml: 2,
+                  // ml: 2,
                   fontFamily: "Mitr, sans-serif",
                 }}
                 variant="h2"

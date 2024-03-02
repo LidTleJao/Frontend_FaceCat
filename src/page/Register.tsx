@@ -4,6 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import PersonIcon from "@mui/icons-material/Person";
 import EmailIcon from '@mui/icons-material/Email';
 import LockIcon from "@mui/icons-material/Lock";
+import "./Login.css";
 
 function RegisterPage() {
   const navigate = useNavigate();
@@ -20,7 +21,7 @@ function RegisterPage() {
           justifyContent={"start"}
           alignItems={"center"}
           sx={{
-            width: 500,
+            width: 400,
             height: 650,
             borderRadius: 5,
             backgroundColor: "#FFA928",
@@ -30,8 +31,8 @@ function RegisterPage() {
             <Box
               marginTop={"50px"}
               sx={{
-                width: 150,
-                height: 150,
+                width: 140,
+                height: 140,
                 borderRadius: 20,
                 bgcolor: "white",
               }}
@@ -45,8 +46,8 @@ function RegisterPage() {
               >
                 <CardMedia
                   sx={{
-                    height: 130,
-                    width: 130,
+                    height: 120,
+                    width: 120,
                     borderRadius: 20,
                     // display: "flex",
                     justifyContent: "center",
@@ -76,11 +77,11 @@ function RegisterPage() {
           </div>
           <div>
             <Box display={"flex"} flexDirection={"column"} >
-            <div>
+            <div style={{display:"flex",justifyContent:"center"}}>
                 <TextField
                   // id="outlined-start-adornment"
                   placeholder="ชื่อผู้ใช้งาน"
-                  sx={{ m: 1, width: "50ch" }}
+                  sx={{ m: 1, width: "45ch" }}
                   InputProps={{
                     sx: { borderRadius: "50px", bgcolor: "white" },
                     startAdornment: (
@@ -92,11 +93,11 @@ function RegisterPage() {
                   }}
                 />
               </div>
-              <div>
+              <div style={{display:"flex",justifyContent:"center"}}>
                 <TextField
                   // id="outlined-start-adornment"
                   placeholder="อีเมล"
-                  sx={{ m: 1, width: "50ch" }}
+                  sx={{ m: 1, width: "45ch" }}
                   InputProps={{
                     sx: { borderRadius: "50px", bgcolor: "white" },
                     startAdornment: (
@@ -108,10 +109,10 @@ function RegisterPage() {
                   }}
                 />
               </div>
-              <div>
+              <div style={{display:"flex",justifyContent:"center"}}>
                 <TextField
                   placeholder="รหัสผ่าน"
-                  sx={{ m: 1, width: "50ch" }}
+                  sx={{ m: 1, width: "45ch" }}
                   type="password"
                   autoComplete="current-password"
                   InputProps={{
@@ -125,10 +126,10 @@ function RegisterPage() {
                   }}
                 />
               </div>
-              <div>
+              <div style={{display:"flex",justifyContent:"center"}}>
                 <TextField
                   placeholder="ยืนยันรหัสผ่าน"
-                  sx={{ m: 1, width: "50ch" }}
+                  sx={{ m: 1, width: "45ch" }}
                   type="password"
                   autoComplete="current-password"
                   InputProps={{
@@ -150,7 +151,7 @@ function RegisterPage() {
                     width: "8pc",
                     color: "black",
                     borderRadius: 50,
-                    marginLeft: "140px",
+                    marginLeft: "120px",
                     marginTop: "10px",
                     fontFamily: "Mitr, sans-serif",
                   }}

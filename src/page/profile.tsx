@@ -3,6 +3,7 @@ import Header from "../component/Header";
 import AddPhotoAlternateOutlinedIcon from "@mui/icons-material/AddPhotoAlternateOutlined";
 import { Button, CardMedia, Grid, TextField, Typography } from "@mui/material";
 import { useNavigate } from "react-router-dom";
+import "./profile.css";
 
 function ProfilePage() {
   const navigate = useNavigate();
@@ -15,8 +16,8 @@ function ProfilePage() {
       <Header />
       <Box
         sx={{
-          width: 1700,
-          height: 700,
+          width: 1300,
+          height: 550,
           borderRadius: 10,
           marginTop: 10,
           backgroundColor: "#FFA928",
@@ -48,7 +49,7 @@ function ProfilePage() {
                 ml: 2,
                 fontFamily: "Mitr, sans-serif",
               }}
-              variant="h3"
+              variant="h4"
             >
               ข้อมูลส่วนตัว
             </Typography>
@@ -72,8 +73,8 @@ function ProfilePage() {
               <div style={{ flexGrow: 1, display: "flex" }}>
                 <CardMedia
                   sx={{
-                    height: 140,
-                    width: 140,
+                    height: 120,
+                    width: 120,
                     borderRadius: 20,
                     display: "flex",
                     justifyContent: "center",
@@ -85,7 +86,7 @@ function ProfilePage() {
               <div
                 style={{
                   marginBottom: "20px",
-                  marginLeft: "50px",
+                  marginLeft: "20px",
                 }}
               >
                 <div>
@@ -106,7 +107,7 @@ function ProfilePage() {
                 <div>
                   <TextField
                     // placeholder="NameUser"
-                    sx={{ m: 1, width: "50ch" }}
+                    sx={{ m: 1, width: "40ch" }}
                     InputProps={{
                       sx: { borderRadius: "50px", bgcolor: "white" },
                       startAdornment: (
@@ -121,7 +122,7 @@ function ProfilePage() {
               <div
                 style={{
                   marginBottom: "20px",
-                  marginLeft: "50px",
+                  marginLeft: "20px",
                 }}
               >
                 <div>
@@ -142,7 +143,7 @@ function ProfilePage() {
                 <div>
                   <TextField
                     // placeholder="Gmail"
-                    sx={{ m: 1, width: "50ch" }}
+                    sx={{ m: 1, width: "40ch" }}
                     InputProps={{
                       sx: { borderRadius: "50px", bgcolor: "white" },
                       startAdornment: (
@@ -157,7 +158,7 @@ function ProfilePage() {
               <div
                 style={{
                   marginBottom: "20px",
-                  marginLeft: "50px",
+                  marginLeft: "20px",
                 }}
               >
                 <div>
@@ -178,7 +179,7 @@ function ProfilePage() {
                 <div>
                   <TextField
                     // placeholder="Password"
-                    sx={{ m: 1, width: "50ch" }}
+                    sx={{ m: 1, width: "40ch" }}
                     InputProps={{
                       sx: { borderRadius: "50px", bgcolor: "white" },
                       startAdornment: (
@@ -199,15 +200,15 @@ function ProfilePage() {
               display: "flex",
               // justifyContent: "space-between",
               marginLeft: "100px",
-              marginTop: "100px",
+              marginTop: "50px",
             }}
           >
             <Grid container spacing={2}>
               <Grid item xs={2.3}>
                 <CardMedia
                   sx={{
-                    height: 260,
-                    width: 260,
+                    height: 160,
+                    width: 160,
                     borderRadius: 5,
                     display: "flex",
                     justifyContent: "center",
@@ -221,8 +222,8 @@ function ProfilePage() {
               <Grid item xs={2.3}>
                 <CardMedia
                   sx={{
-                    height: 260,
-                    width: 260,
+                    height: 160,
+                    width: 160,
                     borderRadius: 5,
                     display: "flex",
                     justifyContent: "center",
@@ -234,8 +235,8 @@ function ProfilePage() {
               <Grid item xs={2.3}>
                 <CardMedia
                   sx={{
-                    height: 260,
-                    width: 260,
+                    height: 160,
+                    width: 160,
                     borderRadius: 5,
                     display: "flex",
                     justifyContent: "center",
@@ -247,8 +248,8 @@ function ProfilePage() {
               <Grid item xs={2.3}>
                 <CardMedia
                   sx={{
-                    height: 260,
-                    width: 260,
+                    height: 160,
+                    width: 160,
                     borderRadius: 5,
                     display: "flex",
                     justifyContent: "center",
@@ -257,12 +258,12 @@ function ProfilePage() {
                   image="src/img/fox2.png"
                 />
               </Grid>
-              <Grid item xs={2.3}>
+              <Grid item xs={1.8}>
                 <div style={{ backgroundColor: "white", borderRadius: 15 }}>
                   <Box
                     sx={{
-                      height: 260,
-                      width: 260,
+                      height: 160,
+                      width: 160,
                       borderRadius: 5,
                       borderColor: "white",
                       display: "flex",
@@ -272,12 +273,12 @@ function ProfilePage() {
                   >
                     <AddPhotoAlternateOutlinedIcon
                       sx={{
-                        height: 160,
-                        width: 160,
+                        height: 100,
+                        width: 100,
                         display: "flex",
                         justifyContent: "center",
                         alignItems: "center",
-                        marginLeft: "30px",
+                        marginLeft: "10px",
                       }}
                     />
                   </Box>
@@ -293,7 +294,7 @@ function ProfilePage() {
           display: "flex",
           justifyContent: "end",
           flexDirection: "row",
-          marginTop:"30px"
+          marginTop:"10px"
         }}
       >
         <Button

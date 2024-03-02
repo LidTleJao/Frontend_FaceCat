@@ -1,18 +1,9 @@
-import { Box, Container } from "@mui/system";
-import Header from "../component/Header";
-import {
-  CardMedia,
-  Table,
-  TableBody,
-  TableCell,
-  TableContainer,
-  TableRow,
-  Typography,
-} from "@mui/material";
+import { Typography, TableContainer, Table, TableBody, TableRow, TableCell, CardMedia } from "@mui/material";
+import { Container, Box } from "@mui/system";
 import FavoriteIcon from "@mui/icons-material/Favorite";
-import "./Ranking.css";
+import Header_Admin from "../../component/Header_Admin";
 
-function RankingPage() {
+function AdminRankingPage() {
   const RankingData = [
     { image: "src/img/profile.jpg", nameimage: "Mr.Fresh", linkimg: "1K" },
     { image: "src/img/cat2.jpg", nameimage: "เมเปิ้ล", linkimg: "360" },
@@ -22,7 +13,7 @@ function RankingPage() {
   ];
   return (
     <>
-      <Header />
+      <Header_Admin />
       <Container fixed>
         <Box
           display={"flex"}
@@ -30,8 +21,8 @@ function RankingPage() {
           justifyContent={"start"}
           alignItems={"center"}
           sx={{
-            width: 680,
-            height: 630,
+            width: 700,
+            height: 700,
             borderRadius: 15,
             marginTop: "70px",
             backgroundColor: "#FFA928",
@@ -58,10 +49,10 @@ function RankingPage() {
               จัดอันดับ
             </Typography>
           </div>
-          <div >
+          <div>
             <TableContainer
               style={{
-                maxHeight: 450,
+                maxHeight: 520,
                 display: "flex",
                 justifyContent: "center",
               }}
@@ -72,10 +63,9 @@ function RankingPage() {
                   justifyContent: "center",
                 }}
               >
-                <TableBody >
+                <TableBody>
                   {RankingData.map((data, index) => (
-                    
-                    <TableRow key={index} >
+                    <TableRow key={index}>
                       <TableCell>
                         <Box
                           display={"flex"}
@@ -181,5 +171,4 @@ function RankingPage() {
     </>
   );
 }
-
-export default RankingPage;
+export default AdminRankingPage;

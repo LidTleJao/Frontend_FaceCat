@@ -6,6 +6,9 @@ import VotePage from './page/Vote';
 import ProfilePage from './page/profile';
 import ProfileEditPage from './page/profile_edit';
 import RankingPage from './page/Ranking';
+import AdminUserAllPage from './page/Admin/AdminUserAll';
+import AdminRankingPage from './page/Admin/AdminRaniking';
+
 
 
 function App() {
@@ -17,6 +20,8 @@ function App() {
       { path: "/Profile", element: <ProfilePage />},
       { path: "/ProfileEdit", element: <ProfileEditPage />},
       { path: "/ranking", element: <RankingPage />},
+      { path: "/admin_userall", element: <AdminUserAllPage />},
+      { path: "/admin_ranking", element: <AdminRankingPage />},
     ]
   );
 

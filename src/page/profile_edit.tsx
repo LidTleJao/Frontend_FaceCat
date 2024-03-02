@@ -5,6 +5,7 @@ import Header from "../component/Header";
 import { useNavigate } from "react-router-dom";
 import ClearIcon from "@mui/icons-material/Clear";
 import ModeEditIcon from "@mui/icons-material/ModeEdit";
+import "./Login.css";
 
 function ProfileEditPage() {
   const navigate = useNavigate();
@@ -17,8 +18,8 @@ function ProfileEditPage() {
       <Header />
       <Box
         sx={{
-          width: 1700,
-          height: 700,
+          width: 1300,
+          height: 550,
           borderRadius: 10,
           marginTop: 10,
           backgroundColor: "#FFA928",
@@ -50,7 +51,7 @@ function ProfileEditPage() {
                 ml: 2,
                 fontFamily: "Mitr, sans-serif",
               }}
-              variant="h3"
+              variant="h4"
             >
               ข้อมูลส่วนตัว
             </Typography>
@@ -60,7 +61,7 @@ function ProfileEditPage() {
               flexDirection: "row",
               display: "flex",
               justifyContent: "space-between",
-              marginLeft: "100px",
+              marginLeft: "80px",
             }}
           >
             <div
@@ -77,7 +78,7 @@ function ProfileEditPage() {
                     <Button
                       variant="contained"
                       sx={{
-                        height: 40,
+                        height: 30,
                         width: 20,
                         borderRadius: 20,
                       }}
@@ -94,8 +95,8 @@ function ProfileEditPage() {
 
                   <CardMedia
                     sx={{
-                      height: 140,
-                      width: 140,
+                      height: 100,
+                      width: 100,
                       borderRadius: 20,
                       display: "flex",
                       justifyContent: "center",
@@ -109,7 +110,7 @@ function ProfileEditPage() {
               <div
                 style={{
                   marginBottom: "20px",
-                  marginLeft: "50px",
+                  marginLeft: "20px",
                 }}
               >
                 <div>
@@ -130,7 +131,7 @@ function ProfileEditPage() {
                 <div>
                   <TextField
                     placeholder="Prapanpong"
-                    sx={{ m: 1, width: "50ch" }}
+                    sx={{ m: 1, width: "40ch" }}
                     InputProps={{
                       sx: { borderRadius: "50px", bgcolor: "white" },
                       startAdornment: <>{/* <h3>Prapanpong</h3> */}</>,
@@ -141,7 +142,7 @@ function ProfileEditPage() {
               <div
                 style={{
                   marginBottom: "20px",
-                  marginLeft: "50px",
+                  marginLeft: "20px",
                 }}
               >
                 <div>
@@ -162,7 +163,7 @@ function ProfileEditPage() {
                 <div>
                   <TextField
                     placeholder="Prapanpong@gmail.com"
-                    sx={{ m: 1, width: "50ch" }}
+                    sx={{ m: 1, width: "40ch" }}
                     InputProps={{
                       sx: { borderRadius: "50px", bgcolor: "white" },
                       startAdornment: (
@@ -175,7 +176,7 @@ function ProfileEditPage() {
               <div
                 style={{
                   marginBottom: "20px",
-                  marginLeft: "50px",
+                  marginLeft: "20px",
                 }}
               >
                 <div>
@@ -196,7 +197,7 @@ function ProfileEditPage() {
                 <div>
                   <TextField
                     placeholder="1234"
-                    sx={{ m: 1, width: "50ch" }}
+                    sx={{ m: 1, width: "40ch" }}
                     InputProps={{
                       sx: { borderRadius: "50px", bgcolor: "white" },
                       startAdornment: <>{/* <h3>1234</h3> */}</>,
@@ -213,7 +214,7 @@ function ProfileEditPage() {
               display: "flex",
               // justifyContent: "space-between",
               marginLeft: "100px",
-              marginTop: "30px",
+              marginTop: "10px",
             }}
           >
             <Grid container spacing={2}>
@@ -244,8 +245,8 @@ function ProfileEditPage() {
                 </div>
                 <CardMedia
                   sx={{
-                    height: 260,
-                    width: 260,
+                    height: 160,
+                    width: 160,
                     borderRadius: 5,
                     display: "flex",
                     justifyContent: "center",
@@ -282,8 +283,8 @@ function ProfileEditPage() {
                 </div>
                 <CardMedia
                   sx={{
-                    height: 260,
-                    width: 260,
+                    height: 160,
+                    width: 160,
                     borderRadius: 5,
                     display: "flex",
                     justifyContent: "center",
@@ -319,8 +320,8 @@ function ProfileEditPage() {
                 </div>
                 <CardMedia
                   sx={{
-                    height: 260,
-                    width: 260,
+                    height: 160,
+                    width: 160,
                     borderRadius: 5,
                     display: "flex",
                     justifyContent: "center",
@@ -356,8 +357,8 @@ function ProfileEditPage() {
                 </div>
                 <CardMedia
                   sx={{
-                    height: 260,
-                    width: 260,
+                    height: 160,
+                    width: 160,
                     borderRadius: 5,
                     display: "flex",
                     justifyContent: "center",
@@ -366,12 +367,12 @@ function ProfileEditPage() {
                   image="src/img/fox2.png"
                 />
               </Grid>
-              <Grid item xs={2.3}>
+              <Grid item xs={1.8}>
                 <div style={{ backgroundColor: "white", borderRadius: 15 }}>
                   <Box
                     sx={{
-                      height: 260,
-                      width: 260,
+                      height: 160,
+                      width: 160,
                       borderRadius: 5,
                       borderColor: "white",
                       display: "flex",
@@ -382,12 +383,12 @@ function ProfileEditPage() {
                   >
                     <AddPhotoAlternateOutlinedIcon
                       sx={{
-                        height: 160,
-                        width: 160,
+                        height: 100,
+                        width: 100,
                         display: "flex",
                         justifyContent: "center",
                         alignItems: "center",
-                        marginLeft: "30px",
+                        marginLeft: "10px",
                       }}
                     />
                   </Box>

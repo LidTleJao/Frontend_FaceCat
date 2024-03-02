@@ -9,6 +9,7 @@ import {
 import PersonIcon from "@mui/icons-material/Person";
 import LockIcon from "@mui/icons-material/Lock";
 import { Link, useNavigate } from "react-router-dom";
+import "./Login.css";
 
 function LoginPage() {
   const navigate = useNavigate();
@@ -25,8 +26,8 @@ function LoginPage() {
           justifyContent={"start"}
           alignItems={"center"}
           sx={{
-            width: 500,
-            height: 650,
+            width: 400,
+            height: 550,
             borderRadius: 5,
             backgroundColor: "#FFA928",
           }}
@@ -35,8 +36,8 @@ function LoginPage() {
             <Box
               marginTop={"50px"}
               sx={{
-                width: 150,
-                height: 150,
+                width: 140,
+                height: 140,
                 borderRadius: 20,
                 bgcolor: "white",
               }}
@@ -50,8 +51,8 @@ function LoginPage() {
               >
                 <CardMedia
                   sx={{
-                    height: 130,
-                    width: 130,
+                    height: 120,
+                    width: 120,
                     borderRadius: 20,
                     // display: "flex",
                     justifyContent: "center",
@@ -79,12 +80,12 @@ function LoginPage() {
             </div>
           </div>
           <div>
-            <Box display={"flex"} flexDirection={"column"} margin={"50px"}>
-              <div>
+            <Box display={"flex"} flexDirection={"column"} margin={"20px"}>
+              <div style={{display:"flex",justifyContent:"center"}}>
                 <TextField
                   // id="outlined-start-adornment"
                   placeholder="อีเมล"
-                  sx={{ m: 1, width: "50ch" }}
+                  sx={{ m: 1, width: "45ch" }}
                   InputProps={{
                     sx: { borderRadius: "50px", bgcolor: "white" },
                     startAdornment: (
@@ -96,10 +97,10 @@ function LoginPage() {
                   }}
                 />
               </div>
-              <div>
+              <div style={{display:"flex",justifyContent:"center"}}>
                 <TextField
                   placeholder="รหัสผ่าน"
-                  sx={{ m: 1, width: "50ch" }}
+                  sx={{ m: 1, width: "45ch" }}
                   type="password"
                   autoComplete="current-password"
                   InputProps={{
@@ -122,7 +123,7 @@ function LoginPage() {
                     color: "black",
                     fontFamily: "Mitr, sans-serif",
                     borderRadius: 50,
-                    marginLeft: "140px",
+                    marginLeft: "120px",
                     marginTop: "30px",
                   }}
                   onClick={navigateToVotePage}
