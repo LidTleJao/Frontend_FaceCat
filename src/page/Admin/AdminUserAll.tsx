@@ -1,8 +1,14 @@
 // import { jsx } from "@emotion/react";
 import { CardMedia, Grid, Paper, Typography } from "@mui/material";
 import Header_Admin from "../../component/Header_Admin";
+import { useNavigate } from "react-router-dom";
 
 function AdminUserAllPage() {
+  const navigate = useNavigate();
+
+  function navigateToUserProfilePage() {
+    navigate("/userprofile");
+  }
   return (
     <>
       <Header_Admin />
@@ -12,6 +18,7 @@ function AdminUserAllPage() {
             {[0, 1, 2, 3].map((value) => (
               <Grid key={value} item>
                 <Paper
+                  onClick={navigateToUserProfilePage}
                   sx={{
                     height: 250,
                     width: 200,
@@ -19,11 +26,10 @@ function AdminUserAllPage() {
                     bgcolor: "#FFA928",
                     display: "flex",
                     justifyContent: "center",
-                    alignItems:"center",
-                    flexDirection:"column",
+                    alignItems: "center",
+                    flexDirection: "column",
                   }}
                 >
-                  {/* <h1>Hello</h1> */}
                   <div style={{ display: "flex" }}>
                     <CardMedia
                       sx={{
@@ -47,7 +53,6 @@ function AdminUserAllPage() {
                         alignItems: "center",
                         color: "black",
                         fontFamily: "Mitr, sans-serif",
-                        
                       }}
                       variant="h4"
                     >

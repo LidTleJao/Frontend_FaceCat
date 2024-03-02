@@ -8,6 +8,7 @@ import ProfileEditPage from './page/profile_edit';
 import RankingPage from './page/Ranking';
 import AdminUserAllPage from './page/Admin/AdminUserAll';
 import AdminRankingPage from './page/Admin/AdminRaniking';
+import Admin_UserProfilePage from './page/Admin/AdminUserProfile';
 
 
 
@@ -22,6 +23,7 @@ function App() {
       { path: "/ranking", element: <RankingPage />},
       { path: "/admin_userall", element: <AdminUserAllPage />},
       { path: "/admin_ranking", element: <AdminRankingPage />},
+      { path: "/userprofile", element: <Admin_UserProfilePage />},
     ]
   );
 
