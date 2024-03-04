@@ -1,9 +1,15 @@
 import { Box } from "@mui/system";
 import { CardMedia, Grid, TextField, Typography } from "@mui/material";
-// import "./profile.css";
+import "./AdminUserProfile.css"
 import Header_Admin from "../../component/Header_Admin";
+import { useNavigate } from "react-router-dom";
 
 function Admin_UserProfilePage() {
+  const navigate = useNavigate();
+
+  function navigateToUserDetailImagePage() {
+    navigate("/admin_user_detail_image");
+  }
   return (
     <>
       <Header_Admin />
@@ -197,7 +203,7 @@ function Admin_UserProfilePage() {
             }}
           >
             <Grid container spacing={2}>
-              <Grid item xs={2.3}>
+              <Grid item xs={2.3} onClick={navigateToUserDetailImagePage}>
                 <CardMedia
                   sx={{
                     height: 160,

@@ -11,6 +11,9 @@ function ProfilePage() {
     function navigateToProfileEditPage() {
         navigate("/ProfileEdit");
     }
+    function navigateToDetailImagePage() {
+      navigate("/detail_image");
+  }
   return (
     <>
       <Header />
@@ -214,7 +217,7 @@ function ProfilePage() {
                     justifyContent: "center",
                     alignItems: "center",
                   }}
-                  onClick={navigateToProfileEditPage}
+                  onClick={navigateToDetailImagePage}
                   image="src/img/cat2.jpg"
                 />
               </Grid>
